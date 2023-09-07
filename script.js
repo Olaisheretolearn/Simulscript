@@ -36,11 +36,11 @@ function checkSimilarity() {
         resultDiv.style.color = "red";
         progressBar.style.backgroundColor = "red";
     } else if (similarity > 0.7) {  // Adjust this threshold as needed
-        resultDiv.textContent = `Fair Similarity: ${similarity.toFixed(2)}`;
+        resultDiv.textContent = `Fair Similarity: ${similarity.toFixed(2) * 100} %`;
         resultDiv.style.color = "yellow";
         progressBar.style.backgroundColor = "yellow";
     } else {
-        resultDiv.textContent = `Low Similarity: ${similarity.toFixed(2)}`;
+        resultDiv.textContent = `Low Similarity: ${similarity.toFixed(2) * 100} %`;
         resultDiv.style.color = "green";
         progressBar.style.backgroundColor = "green";
     }
