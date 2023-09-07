@@ -66,3 +66,22 @@ button:hover {
     margin-top: 1em;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    .area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap :4px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 200px;
+        margin: 1em 0;
+        padding: 1em;
+        border-radius: 5px;
+        border: none;
+    }
+    }
+
